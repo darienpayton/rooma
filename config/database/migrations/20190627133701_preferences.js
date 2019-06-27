@@ -6,7 +6,7 @@ exports.up = function(knex, Promise) {
 		tbl.string('prefer_pets').notNullable();
 		tbl.string('private_bathroom').notNullable();
 		tbl.string('transportation_proximity').notNullable();
-		tbl.string('budget').notNullable();
+		tbl.integer('budget').notNullable();
 	});
 };
 
