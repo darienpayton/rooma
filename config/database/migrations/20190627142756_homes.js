@@ -9,7 +9,7 @@ exports.up = function(knex, Promise) {
 			.foreign('user_id')
 			.references('users.id')
 			.onDelete('CASCADE')
-			.onUpdate('CASCASE');
+			.onUpdate('CASCADE');
 		tbl.string('address').notNullable();
 		tbl.string('rooms').notNullable();
 		tbl.string('pet_friendly').notNullable();
