@@ -5,9 +5,14 @@ exports.up = function(knex, Promise) {
 		tbl.string('first_name').notNullable();
 		tbl.string('last_name').notNullable();
 		tbl
-			.string('pref_id')
-			.references('id')
-			.onTable('preferences');
+			.integer('pref_id')
+			.unsigned()
+			.notNullable();
+		tbl
+			.foreign('pref_id')
+			.references('preferences.id')
+			.onDelete('CASCADE')
+			.onUpdate('CASCADE');
 	});
 };
 
