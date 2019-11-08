@@ -1,112 +1,109 @@
 <!DOCTYPE html>
 <html lang="eng">
-	<head>
-		<meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
 
-		<title>Rooma</title>
+    <title>Rooma</title>
 
-		<link
-			href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-			rel="stylesheet"
-		/>
+    <link href="styles/index.css" type="text/css" rel="stylesheet" />
 
-		<!--[if lt IE 9]>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-	<body class="mx-48 bg-blue-100">
-		<!-- Header Navigation -->
-		<nav class="">
-			<h1 class="text-4xl">Rooma</h1>
-		</nav>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="bg-ocean-white-400 h-screen">
+      <nav class="">
+        <h1 class="text-4xl">Rooma</h1>
+      </nav>
 
-		<!-- Top Section -->
-		<div class="flex flex-row-reverse mt-6 justify-center">
-			<div class="w-1/2">
-				<img class="rounded-lg" src="./assets/apartment.svg" />
-			</div>
-			<div class="w-1/2 mt-24">
-				<h2 class="mb-6 text-6xl text-center">Welcome Home!</h2>
-				<p class="text-3xl text-center">Finding a roommate, simplified.</p>
-				<p class="text-center text-base mb-6">
-					Tell us what you're looking for and we'll deliver.
-				</p>
-				<form>
-					<button
-						class="block bg-red-400 hover:bg-red-600 text-white uppercase text-lg mx-auto p-4 rounded mb-6"
-						formaction="https://airtable.com/shr1XslNOr4mgMloy"
-					>
-						List Your Place
-					</button>
-				</form>
-				<form>
-					<button
-						class="block bg-red-400 hover:bg-red-600 text-white uppercase text-lg mx-auto p-4 rounded"
-						formaction="https://airtable.com/shriF7WD133zWsoYp"
-					>
-						Find A Place
-					</button>
-				</form>
-			</div>
-		</div>
+      <div class=""></div>
 
-		<!-- Main Section -->
-		<div class="mt-16 text-center">
-			<h2 class="text-5xl">How It Works</h2>
-		</div>
+      <div class="flex flex-row-reverse mt-6 justify-centers">
+        <div class="w-1/2">
+          <img class="rounded-lg" src="./assets/apartment.svg" />
+        </div>
+        <div class="w-1/2 mt-24">
+          <h2 class="mb-6 text-6xl text-center">Welcome Home!</h2>
+          <p class="text-3xl text-center">Finding a roommate, simplified.</p>
+          <p class="text-center text-base mb-6">
+            Tell us what you're looking for and we'll deliver.
+          </p>
+          <form>
+            <button
+              class="block bg-red-400 hover:bg-red-600 text-white uppercase text-lg mx-auto p-4 rounded mb-6"
+              formaction="https://airtable.com/shr1XslNOr4mgMloy"
+            >
+              List Your Place
+            </button>
+          </form>
+          <form>
+            <button
+              class="block bg-red-400 hover:bg-red-600 text-white uppercase text-lg mx-auto p-4 rounded"
+              formaction="https://airtable.com/shriF7WD133zWsoYp"
+            >
+              Find A Place
+            </button>
+          </form>
+        </div>
+      </div>
 
-		<div class="flex flex-row-reverse my-24">
-			<div class="w-2/5">
-				<img class="shadow-2xl rounded-lg" src="./assets/location.svg" />
-			</div>
-			<div class=" w-1/3 flex justify-center">
-				<div class="w-4/5 text-center mt-6">
-					<h3 class="text-4xl">Tell Us What You're Looking for</h3>
-					<p class="text-lg">
-						Take our quick survey to tell us what you're interested in. Want a
-						place that's pet-friendly? Need to be close to public
-						transportation? Let us know!
-					</p>
-				</div>
-			</div>
-		</div>
+      <div class="mt-16 text-center">
+        <h2 class="text-5xl">How It Works</h2>
+      </div>
 
-		<div class="flex my-24">
-			<div class="w-2/5">
-				<img
-					class="shadow-2xl rounded-lg"
-					src="./assets/relaxing_at_home.svg"
-				/>
-			</div>
-			<div class="w-1/3 flex justify-center">
-				<div class="w-4/5 text-center mt-6">
-					<h3 class="text-4xl">Enjoy Life</h3>
-					<p class="text-lg">
-						Focus on those other things you've been meaning to do while Rooma
-						works hard to find the perfect place and people for you.
-					</p>
-				</div>
-			</div>
-		</div>
+      <div class="flex flex-row-reverse my-24">
+        <div class="w-2/5">
+          <img class="shadow-2xl rounded-lg" src="./assets/location.svg" />
+        </div>
+        <div class=" w-1/3 flex justify-center">
+          <div class="w-4/5 text-center mt-6">
+            <h3 class="text-4xl">Tell Us What You're Looking for</h3>
+            <p class="text-lg">
+              Take our quick survey to tell us what you're interested in. Want a
+              place that's pet-friendly? Need to be close to public
+              transportation? Let us know!
+            </p>
+          </div>
+        </div>
+      </div>
 
-		<div class="flex flex-row-reverse my-24">
-			<div class="w-2/5">
-				<img class="shadow-2xl rounded-lg" src="./assets/celebrate.svg" />
-			</div>
-			<div class="w-1/3 flex justify-center">
-				<div class="w-4/5 text-center mt-6">
-					<h3 class="text-4xl">Celebrate!</h3>
-					<p class="text-lg">
-						Congratulations! You found a new place and made some new friends!
-						That was easy.
-					</p>
-				</div>
-			</div>
-		</div>
+      <div class="flex my-24">
+        <div class="w-2/5">
+          <img
+            class="shadow-2xl rounded-lg"
+            src="./assets/relaxing_at_home.svg"
+          />
+        </div>
+        <div class="w-1/3 flex justify-center">
+          <div class="w-4/5 text-center mt-6">
+            <h3 class="text-4xl">Enjoy Life</h3>
+            <p class="text-lg">
+              Focus on those other things you've been meaning to do while Rooma
+              works hard to find the perfect place and people for you.
+            </p>
+          </div>
+        </div>
+      </div>
 
-		<!-- Footer -->
-		<footer class="text-center">
-			<p>Copyright 2019 Rooma</p>
-		</footer>
-	</body>
+      <div class="flex flex-row-reverse my-24">
+        <div class="w-2/5">
+          <img class="shadow-2xl rounded-lg" src="./assets/celebrate.svg" />
+        </div>
+        <div class="w-1/3 flex justify-center">
+          <div class="w-4/5 text-center mt-6">
+            <h3 class="text-4xl">Celebrate!</h3>
+            <p class="text-lg">
+              Congratulations! You found a new place and made some new friends!
+              That was easy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="text-center">
+        <p>Copyright 2019 Rooma</p>
+      </footer>
+    </div>
+  </body>
 </html>
